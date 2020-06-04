@@ -1,0 +1,11 @@
+language: python
+
+python:
+- "3.6"
+
+install:
+- pip install -r requirements.txt
+- npm install
+
+script:
+ - npm test || pytest || ruby tests/ruby_solution_test.rb || travis_terminate 1
