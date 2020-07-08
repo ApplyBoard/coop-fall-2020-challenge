@@ -1,9 +1,15 @@
-const json = require('./tests/challenge.json');
+class EventSourcer {
+  constructor() {
+    this.value = 0;
+  }
 
-const solution = () => {
-  // Write your code here.
-  return null;
+  add(num) {}
+  subtract(num) {}
+  undo() {}
+  redo() {}
+  bulk_undo(num) {}
+  bulk_redo(num) {}
 }
 
 // ----- Do not modify anything below this line (needed for test suite) ------
-module.exports = refineParameters;
+module.exports = EventSourcer;
